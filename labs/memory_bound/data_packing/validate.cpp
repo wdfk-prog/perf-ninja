@@ -59,7 +59,7 @@ int main() {
   std::sort(expected.begin(), expected.end());
 
   for (int i = 0; i < N; i++) {
-    // we only check i components since sort can be unstable
+    // 我们只检查 i 个组件，因为 sort 可能不稳定
     if (arr[i].i != expected[i].i) {
       std::cerr << "Validation Failed. Result[" << i << "].i = " << arr[i].i
                 << ". Expected[" << i << "].i = " << expected[i].i << std::endl;
